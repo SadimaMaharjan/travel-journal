@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #2b283a;
+  font-weight: 400;
 }
 
 .header {
@@ -12,9 +15,89 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f55a5a;
+  font-size: 10.24px;
 }
 
 .top-heading {
   margin-left: 10px;
   color: #fff;
+}
+
+.card-wrapper {
+  padding: 40px 40px 0 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 20px 0;
+}
+
+.card:last-of-type {
+  border: none;
+}
+
+.left-block,
+.right-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-block {
+  justify-content: center;
+  width: 30%;
+  align-items: center;
+}
+
+.left-block > img {
+  width: 100%;
+}
+
+.right-block {
+  width: 70%;
+  padding-left: 20px;
+  align-items: flex-start;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 10.24px;
+  justify-content: center;
+}
+
+.maps-pin-logo {
+  margin-right: 5px;
+}
+
+.country {
+  margin-right: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.link a {
+  color: #918e9b;
+  font-size: 10.24px;
+  text-decoration: underline;
+}
+
+.title {
+  margin: 8px 0 10px 0;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.date {
+  margin: 10px 0 5px 0;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 10.24px;
+  font-weight: 400;
 }
