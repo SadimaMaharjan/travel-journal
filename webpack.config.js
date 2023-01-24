@@ -10,7 +10,7 @@ module.exports = {
   },
   target: "web",
   devServer: {
-    port: "5000",
+    port: "3030",
     static: {
       directory: path.join(__dirname, "public"),
     },
@@ -24,9 +24,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
+        loader: "url-loader",
+        options: { limit: false },
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: ["babel-loader"],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/, // styles files
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },

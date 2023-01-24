@@ -1,7 +1,9 @@
 import React from "react";
+import Navbar from "./Navbar";
+import "../index.css";
 
 const App = () => {
-  return <h1>Hello world! I am using React</h1>;
+  return <Navbar />;
 };
 
 export default App;
